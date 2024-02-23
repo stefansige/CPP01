@@ -14,10 +14,11 @@
 
 Weapon::Weapon(std::string weaponType) : type(weaponType){};
 
+Weapon::~Weapon(){};
+
 const std::string&	Weapon::getType() const
 {
-	const std::string& ret = type;
-	return ret;
+	return type;
 }
 
 void	Weapon::setType(std::string newType)
